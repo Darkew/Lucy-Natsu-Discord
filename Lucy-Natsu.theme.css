@@ -33,7 +33,7 @@
 	background-size: cover !important;
 }
 .callout-backdrop{
-	background: url("https://i.imgur.com/cto6oJb.jpg") !important;
+	background: url("https://i.imgur.com/Rom0exy.png") !important;
 	background-size: cover !important;
 }
 
@@ -114,10 +114,10 @@ textarea {
 }
 
 /* Channels list area */
-.channels-wrap { 
-	background:rgba(0,0,0,0.7);
-	box-shadow: inset 10px 0px 5px -6px #FF0000;
-}
+	.channels-wrap { 
+		background:rgba(0,0,0,0.7);
+		box-shadow: inset 10px 0px 5px -6px #FF0000;
+	}
 
 /* Chat area */
 .content .flex-spacer { 
