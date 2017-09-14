@@ -1,3 +1,4 @@
+//META{"name":"Lucy & Natsu2","description":"A Lucy and Natsu theme.","author":"Ðarkew","version":"1.0.0"}*//{}
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 /* 	
@@ -18,7 +19,25 @@
 }
 
 body:after {
-    content: "¡Tema creado por Ðarkew265!";
+    content: "Versión actual: v" var(--version-content);
+    z-index: 10000000000000000000000000;
+    color: #fff;
+    background: var(--main-color);
+    top: 0;
+    left: 50%;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px 15px;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    -webkit-animation: version 3s ease;
+    animation: version 3s ease;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+body:before {
+    content: "Thanks for using Natsu & Lucy theme! by Ðarkew";
     z-index: 1000000000000000000000000;
     color: #fff;
     background: var(--main-color);
@@ -31,9 +50,48 @@ body:after {
     transform: translate(-50%, -100%);
     -webkit-animation: version 3s ease;
     animation: version 3s ease;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
 }
+
+@-webkit-keyframes version {
+    from {
+        -webkit-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%);
+    }
+    20% {
+        -webkit-transform: translate(-50%, 20%);
+        transform: translate(-50%, 20%)
+    }
+    80% {
+        -webkit-transform: translate(-50%, 20%);
+        transform: translate(-50%, 20%)
+    }
+    to {
+        -webkit-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%);
+    }
+}
+
+@keyframes version {
+    from {
+        -webkit-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%);
+    }
+    20% {
+        -webkit-transform: translate(-50%, 20%);
+        transform: translate(-50%, 20%)
+    }
+    80% {
+        -webkit-transform: translate(-50%, 20%);
+        transform: translate(-50%, 20%)
+    }
+    to {
+        -webkit-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%);
+    }
+}
+
 .theme-dark .chat .title-wrap {
     border-bottom: 1px solid rgb(76,65,109);
 }
