@@ -7,7 +7,7 @@
  */
 
 :root {
-
+	--version-content: 1.0.0;
 	--main-color: rgba(37,172,232,1);
 	--main-color-faded: rgba(37,172,232,0.4);
 	--accent-color: rgba(29,101,134,1);
@@ -16,6 +16,42 @@
 	--short-gradient: linear-gradient(45deg, rgba(29,101,134,0.5), rgba(37,172,232,0.5));
 	--short-gradient-faded: linear-gradient(45deg, rgba(29,101,134,0.1), rgba(37,172,232,0.1));
 
+}
+
+body:after {
+    content: "Version actual: v" var(--version-content);
+    z-index: 10000000000000000000000000;
+    color: #fff;
+    background: var(--main-color);
+    top: 0;
+    left: 50%;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px 15px;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    -webkit-animation: version 3s ease;
+    animation: version 3s ease;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+body:before {
+    content: "¡Tema creado por Ðarkew265!";
+    z-index: 1000000000000000000000000;
+    color: #fff;
+    background: var(--main-color);
+    top: 0px;
+    left: 50%;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px 15px;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    -webkit-animation: version 3s ease;
+    animation: version 3s ease;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
 }
 
 /*
